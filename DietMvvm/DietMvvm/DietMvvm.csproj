@@ -35,6 +35,12 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Events\EmptyArgsEventHandler.cs" />
+    <Compile Include="Events\EventAggregator.cs" />
+    <Compile Include="Events\EventExtension.cs" />
+    <Compile Include="Events\GenericEventHandler.cs" />
+    <Compile Include="Events\SingleArgsEventHandler.cs" />
+    <Compile Include="Events\SingleEventArgs.cs" />
     <Compile Include="GenericViewModelCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModelBase.cs" />

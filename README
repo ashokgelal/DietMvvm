@@ -5,3 +5,5 @@ DietMVVM is collection of reusable components for model-view-viewmodel design pa
 2. MVVM Light has become too 'heavy' for most of the work I do. I want to be able to just pick up the good parts and usable parts and rewrite those. Hence, this is going to be UltraLight version. The downside of this is that, at least for now, I will only implement those parts that I really need (I never use Messenger broadcast but use my own event mechanism, which, IMHO is better than Messenger broadcast using strings). My focus for now is to just support WPF version (for both Metro and non-Metro apps). If you are looking for something more heavy weight, MVVM Light is the best I've seen so far.
 
 
+
+

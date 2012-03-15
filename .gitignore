@@ -1,0 +1,14 @@
+*.ncb
+*.aps
+*.suo
+*/bin/*
+*/obj/*
+*ReSharper*
+*.user
+*.orig
+*.cache
+TestResults*
+Visual Studio 11*
+*setup.exe
+*.msi
+*.vs10x

@@ -1,8 +1,8 @@
 *.ncb
 *.aps
 *.suo
-*/bin/*
-*/obj/*
+*/*/bin/*
+*/*/obj/*
 *ReSharper*
 *.user
 *.orig
@@ -12,3 +12,5 @@ Visual Studio 11*
 *setup.exe
 *.msi
 *.vs10x
+*/tools
+default.build

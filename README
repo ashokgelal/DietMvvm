@@ -1,4 +1,4 @@
-DietMVVM is a very very light reusable components for model-view-viewmodel design pattern. Most of the work here is inspired by Laurent Bugnion's awesome MVVMLight library [http://mvvmlight.codeplex.com/]. The purpose of writing yet another MVVM library is two folds:
+DietMVVM is collection of reusable components for model-view-viewmodel design pattern. Most of the work here is inspired by Laurent Bugnion's awesome MVVMLight library [http://mvvmlight.codeplex.com/]. In a sense this is a lighter version of MVVMLight and I might be only supporting WPF version. The purpose of writing yet another MVVM library is two folds:
 
 1. Now after getting familiar with MVVMLight and other mvvm libraries for two years (and using MVVMLight for few projects at work and at home for about one year), I want to step up and learn all the internals of a mvvm pattern.
 

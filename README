@@ -1,7 +1,10 @@
-DietMVVM is a very very light reusable components for model-view-viewmodel design pattern. Most of the work here is inspired by Laurent Bugnion's awesome MVVMLight library [http://mvvmlight.codeplex.com/]. The purpose of writing yet another MVVM library is two folds:
+DietMVVM is collection of reusable components for model-view-viewmodel design pattern. Most of the work here is inspired by Laurent Bugnion's awesome MVVMLight library [http://mvvmlight.codeplex.com/]. In a sense this is a lighter version of MVVMLight and I might be only supporting WPF version. The purpose of writing yet another MVVM library is three folds:
 
-1. Now after getting familiar with MVVMLight and other mvvm libraries for two years (and using MVVMLight for few projects at work and at home for about one year), I want to step up and learn all the internals of a mvvm pattern.
+1. Now after getting familiar with MVVMLight and other mvvm libraries for two years (and using MVVMLight for few projects at work and at home for about one year), I want to step up and learn all the internals of an mvvm pattern.
 
-2. MVVM Light has become too 'heavy' for most of the work I do. I want to be able to just pick up the good parts and usable parts and rewrite those. Hence, this is going to be UltraLight version. The downside of this is that, at least for now, I will only implement those parts that I really need (I never use Messenger broadcast but use my own event mechanism, which, IMHO is better than Messenger broadcast using strings). My focus for now is to just support WPF version (for both Metro and non-Metro apps). If you are looking for something more heavy weight, MVVM Light is the best I've seen so far.
+2. MVVM Light has become too 'heavy' for most of the work I do. I want to be able to just pick up the good parts and usable parts and rewrite those. Hence, this is going to be Ultra Light version. The downside of this is that, at least for now, I will only implement those parts that I really need (I never use Messenger broadcast but use my own event mechanism, which, IMHO is better than Messenger broadcast using strings). My focus for now is to just support WPF version (for both Metro and non-Metro apps). If you are looking for something more heavy weight, MVVM Light is the best I've seen so far.
+
+3. Although, my plan is to just use this for WPF applications, I like to play with the portable library tools. I’ve tried it once before and it was really a painful experience. But now that the portable library tools are a part of Visual Studio 2011, I’d like to challenge myself and see if I can come up with a library that can be shared across multiple platforms without much ‘pound-ifs’.
 
 
+You need Visual Studio 2011 to compile the library.

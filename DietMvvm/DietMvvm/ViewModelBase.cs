@@ -16,9 +16,9 @@ namespace DietMvvm
 
         protected void RaisePropertyChanged<T>(Expression<Func<T>> property)
         {
-            if(property == null)
+            if (property == null)
                 return;
-            OnPropertyChanged(new PropertyChangedEventArgs(((MemberExpression) property.Body).Member.Name));
+            OnPropertyChanged(new PropertyChangedEventArgs(((MemberExpression)property.Body).Member.Name));
         }
 
         #endregion Protected Methods

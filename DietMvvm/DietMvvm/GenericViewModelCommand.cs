@@ -3,7 +3,7 @@ using System.Windows.Input;
 
 namespace DietMvvm
 {
-    public class GenericViewModelCommand<T> : ICommand
+    public class ViewModelCommand<T> : ICommand
     {
         #region Fields
 
@@ -20,13 +20,13 @@ namespace DietMvvm
 
         #region Constructors
 
-        public GenericViewModelCommand(Action<T> execute, Func<T, bool> canExecute)
+        public ViewModelCommand(Action<T> execute, Func<T, bool> canExecute)
         {
             _executeAction = execute;
             _canExecute = canExecute;
         }
 
-        public GenericViewModelCommand(Action<T> execute)
+        public ViewModelCommand(Action<T> execute)
             : this(execute, null)
         {
         }

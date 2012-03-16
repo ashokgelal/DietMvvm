@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
 
 namespace DietMvvm
 {
@@ -14,11 +15,9 @@ namespace DietMvvm
 
         #region Protected Methods
 
-        protected void RaisePropertyChanged<T>(Expression<Func<T>> property)
+        protected void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
         {
-            if (property == null)
-                return;
-            OnPropertyChanged(new PropertyChangedEventArgs(((MemberExpression)property.Body).Member.Name));
+            OnPropertyChanged(new PropertyChangedEventArgs(propertyName));
         }
 
         #endregion Protected Methods
@@ -31,6 +30,13 @@ namespace DietMvvm
             if (handler != null)
                 handler(this, e);
         }
+
+         protected void NotifyPropertyChanged<T>(Expression<Func<T>> property)
+         {
+            if (property == null)
+                 return;
+            OnPropertyChanged(new PropertyChangedEventArgs(((MemberExpression) property.Body).Member.Name));
+         }
 
         #endregion Private Methods
     }
